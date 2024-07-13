@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "PureTech_backend": {
+      "main": "src/PureTech_backend/main.mo",
+      "type": "motoko"
+    },
+    "PureTech_frontend": {
+      "dependencies": [
+        "PureTech_backend"
+      ],
+      "source": [
+        "src/PureTech_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "PureTech_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
